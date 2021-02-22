@@ -7,7 +7,7 @@ export default (state, action) => {
             return[...state, action.payload]
         case REMOVE_TODO:
             return state.filter(todo => todo.id !== action.payload)    
-
+            // this will remove matching todo from todos
         default:
             return state;    
     }
